@@ -24,9 +24,7 @@ Este método es extremadamente útil porque no solo abre el Inspector, sino que 
 
 El Inspector se abrirá, generalmente acoplado, y el panel Elementos estará activo, con el nodo HTML correspondiente al elemento que seleccionaste resaltado. Esto te ahorra el paso de usar el selector de elementos una vez que el Inspector está abierto.
 
-<div class="text--center">
-  <img src="/img/inspector1.png" alt="Mostrar el menú contextual con la opción Inspeccionar Elemento resaltada" />
-</div>
+![Mostrar el menú contextual con la opción Inspeccionar Elemento resaltada](/img/inspector1.png)
 
 ### Método 3: A través del Menú del Navegador
 
@@ -37,9 +35,7 @@ Aunque menos directo, puedes acceder al Inspector desde el menú principal del n
 * **Microsoft Edge:** Menú de tres puntos horizontales (...) > Más herramientas > Herramientas para desarrolladores.
 * **Safari (macOS):** Requiere habilitar el menú "Desarrollo" en Preferencias > Avanzado > "Mostrar el menú Desarrollo en la barra de menús". Una vez habilitado, ve a Desarrollo > Mostrar Inspector Web.
 
-<div class="text--center">
-  <img src="/img/inspector2.png" alt="Abrir Herramientas para desarrolladores desde el menú de Google Chrome" />
-</div>
+![Abrir Herramientas para desarrolladores desde el menú de Google Chrome](/img/inspector2.png)
 
 ### Acoplar y Desacoplar el Inspector (Docking)
 
@@ -54,10 +50,7 @@ Las opciones comunes son:
 * **Dock to right:** Acopla el Inspector en el lado derecho.
 * **Undock into separate window:** Abre el Inspector en su propia ventana flotante.
 
-<div class="text--center">
-  <img src="/img/inspector-docking-options.png" alt="Mostrar las opciones de docking en el menú del Inspector" />
-</div>
-
+![Mostrar las opciones de docking en el menú del Inspector](/img/inspector-docking-options.png)
 
 Elegir dónde acoplar el Inspector a menudo depende del tipo de trabajo que estás haciendo. Para depurar CSS y diseño, acoplar a la derecha o abajo es común. Para trabajar con la Consola o Fuentes, una ventana separada puede ser útil.
 

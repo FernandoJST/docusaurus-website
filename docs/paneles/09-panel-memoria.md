@@ -22,9 +22,7 @@ Nos centraremos en los Heap Snapshots para la detección de fugas.
 2.  Selecciona **"Heap snapshot"** en las opciones de perfilado.
 3.  Haz clic en **"Take snapshot"** (Tomar instantánea). El navegador pausará brevemente para capturar el estado de la memoria. La instantánea aparecerá en el panel lateral izquierdo.
 
-<div class="text--center">
-  <img src="/img/inspector-memoria-take-snapshot.png" alt="Tomando un Heap Snapshot" />
-</div>
+![Tomando un Heap Snapshot](/img/inspector-memoria-take-snapshot.png)
 
 4.  Al seleccionar una instantánea, el área principal mostrará los objetos en la memoria. La vista por defecto suele estar agrupada por constructor (`Constructor`). Columnas importantes incluyen:
     * **Distance:** La distancia más corta a la "raíz" del recolector de basura (objetos globales, la pila de llamadas, etc.). Objetos con una distancia pequeña son más propensos a ser mantenidos.
@@ -42,17 +40,13 @@ La técnica más efectiva para encontrar fugas es comparar snapshots:
 5.  Toma el **segundo Heap Snapshot**.
 6.  En la vista del **segundo** snapshot, cambia el modo de vista en el menú desplegable superior de "Summary" (Resumen) a **"Comparison"** (Comparación). Selecciona el primer snapshot para comparar.
 
-<div class="text--center">
-  <img src="/img/inspector-memoria-comparison.png" alt="Comparando dos Heap Snapshots" />
-</div>
+![Comparando dos Heap Snapshots](/img/inspector-memoria-comparison.png)
 
 7.  La columna **"# Delta"** te mostrará la diferencia en el número de objetos entre los dos snapshots. Una fuga se manifiesta a menudo como un **aumento constante en el número de objetos** de un tipo específico que esperabas que fueran eliminados (ej. nodos del DOM, instancias de una clase de componente) después de realizar una acción repetidamente.
 8.  Ordena la tabla por "# Delta" (descendente) o por "Delta (Retained Size)" para ver qué objetos están aumentando.
 9.  Selecciona un tipo de objeto sospechoso (ej. `HTMLDivElement` si sospechas de nodos DOM filtrados). En el panel inferior, la sección **"Retainers"** (Retenedores) mostrará la **ruta de retención**. Esta es la cadena de referencias de objetos que está impidiendo que el objeto seleccionado sea recolectado por el GC.
 
-<div class="text--center">
-  <img src="/img/inspector-memoria-retainers.png" alt="Inspeccionando la ruta de retención de un objeto" />
-</div>
+![Inspeccionando la ruta de retención de un objeto](/img/inspector-memoria-retainers.png)
 
 10. Analiza la ruta de retención para identificar la referencia "culpable" en tu código que está manteniendo vivo el objeto innecesariamente.
 

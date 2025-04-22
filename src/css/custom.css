@@ -450,3 +450,10 @@ a:hover {
 [data-theme='dark'] ::-webkit-scrollbar-thumb:hover {
   background: var(--ifm-color-emphasis-500);
 }
+
+/* Centrar todas las imágenes dentro del contenido Markdown */
+.markdown img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}

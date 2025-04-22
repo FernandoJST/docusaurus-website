@@ -17,9 +17,7 @@ El panel **Recorder** (Grabador) es una adición relativamente nueva al Inspecto
 4.  Puedes ajustar la **configuración** (ej. ¿quieres incluir scroll? ¿qué atributos prefieres usar para seleccionar elementos?).
 5.  Haz clic en el botón rojo **"Start recording"** (Iniciar grabación).
 
-<div class="text--center">
-  <img alt="Iniciando una nueva grabación en el panel Recorder" src="/img/inspector-recorder-start.png" />
-</div>
+![Iniciando una nueva grabación en el panel Recorder](/img/inspector-recorder-start.png)
 
 6.  Interactúa con la página como lo haría un usuario para completar el flujo que deseas grabar (ej. haz clic en un enlace, escribe texto en un campo, haz clic en un botón). Verás que cada acción que realizas aparece como un "step" (paso) en el panel Recorder.
 7.  Una vez que hayas completado el flujo, haz clic en el botón **"End recording"** (Finalizar grabación).
@@ -30,18 +28,14 @@ Después de detener la grabación, verás la lista de pasos:
 
 * **Reproducir:** Haz clic en el botón de reproducción (el triángulo) para que el navegador repita automáticamente las acciones grabadas. Puedes ajustar la velocidad de reproducción.
 
-<div class="text--center">
-  <img alt="Reproduciendo una grabación" src="/img/inspector-recorder-playback.png" />
-</div>
+![Reproduciendo una grabación](/img/inspector-recorder-playback.png)
 
 * **Editar Pasos:** Puedes hacer clic en cualquier paso para expandirlo y ver sus detalles (ej. el selector del elemento, el tipo de evento, el valor de la entrada de texto). Puedes modificar estos detalles, eliminar pasos o añadir nuevos pasos manualmente (ej. esperar un tiempo).
 * **Medir Rendimiento:** Haz clic en los tres puntos junto al nombre de la grabación y selecciona **"Measure performance"** (Medir rendimiento). Esto ejecutará la grabación mientras el panel Performance graba un perfil. Obtendrás un reporte de rendimiento detallado para ese flujo específico.
 * **Medir Rendimiento:** Haz clic en el ícono de cronómetro 🕒 que aparece al costado derecho del nombre de la grabación. Esto ejecutará la grabación mientras el panel Performance graba un perfil. Obtendrás un reporte de rendimiento detallado para ese flujo específico.
 * **Exportar:** Haz clic en el ícono de exportación ⬇️ (una flecha hacia abajo en una hoja) que aparece junto al nombre de la grabación. Puedes exportar el flujo en varios formatos, incluyendo un script de Puppeteer, un script de Playwright, o un archivo JSON. Esto te permite usar la grabación fuera del Inspector para automatización más robusta.
 
-<div class="text--center">
-  <img alt="Exportando una grabación" src="/img/inspector-recorder-export.png" />
-</div>
+![Exportando una grabación](/img/inspector-recorder-export.png)
 
 * **Importar:** Puedes importar grabaciones previamente exportadas (en formato JSON).
 

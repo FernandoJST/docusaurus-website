@@ -28,8 +28,6 @@ Los atajos de teclado son tus mejores amigos para navegar y usar el Inspector de
 
 Si olvidas un atajo o la ubicación de una opción, el Command Menu es tu salvador. Ábrelo y simplemente empieza a escribir lo que quieres hacer (ej. "screenshot" para tomar una captura de pantalla de un nodo específico, "dock" para cambiar la posición del Inspector, "show render" para abrir el panel de Renderizado). Es una forma muy eficiente de acceder a casi cualquier funcionalidad del Inspector.
 
-<div class="text--center">
-  <img alt="El Command Menu del Inspector" src="/img/inspector-command-menu.png" />
-</div>
+![El Command Menu del Inspector](/img/inspector-command-menu.png)
 
 Integrar estos atajos en tu flujo de trabajo diario te hará sentir mucho más cómodo y ágil al usar el Inspector, permitiéndote concentrarte más en la depuración y menos en buscar botones y menús. Empieza con los más comunes (abrir/cerrar, seleccionar elemento, consola, depuración) y añade más gradualmente.

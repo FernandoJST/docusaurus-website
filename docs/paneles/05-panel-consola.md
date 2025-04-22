@@ -16,9 +16,7 @@ Tu código JavaScript y el propio navegador pueden enviar diferentes tipos de me
 * `console.count(etiqueta)`: Registra cuántas veces se ha llamado a `count()` con la misma etiqueta.
 * `console.time(etiqueta)` / `console.timeEnd(etiqueta)`: Mide el tiempo que tarda en ejecutarse el código entre las dos llamadas.
 
-<div class="text--center">
-  <img src="/img/inspector-consola-tipos-mensajes.png" alt="Ejemplos de diferentes tipos de mensajes en la Consola" />
-</div>
+![Ejemplos de diferentes tipos de mensajes en la Consola](/img/inspector-consola-tipos-mensajes.png)
 
 Cada mensaje suele ir acompañado de un enlace al archivo fuente y número de línea donde se originó. Hacer clic en este enlace te lleva al panel **Fuentes** a esa línea de código.
 
@@ -56,8 +54,6 @@ La barra de herramientas superior de la Consola tiene opciones importantes:
 * **Preserve log:** Una casilla que, si está marcada, mantiene los mensajes de la consola incluso si navegas a otra página o recargas la actual. Muy útil para depurar redirecciones o problemas de carga inicial.
 * **Clear console:** El ícono de prohibido (`∅`) borra todos los mensajes.
 
-<div class="text--center">
-  <img src="/img/inspector-consola-toolbar.png" alt="Barra de herramientas y configuraciones de la Consola" />
-</div>
+![Barra de herramientas y configuraciones de la Consola](/img/inspector-consola-toolbar.png)
 
 La Consola es indispensable para cualquier tarea de depuración JavaScript, para experimentar rápidamente con APIs del navegador o para obtener información sobre el estado de tu aplicación en tiempo de ejecución.

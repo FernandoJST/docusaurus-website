@@ -11,9 +11,7 @@ Para usar el panel Rendimiento, debes grabar la actividad del navegador durante 
     * Haz clic en el círculo **"Record"** (Grabar) y luego interactúa con la página (scroll, clics, animaciones) durante unos segundos. Vuelve al panel y haz clic en **"Stop"** (Detener).
     * Haz clic en el ícono de recarga con una flecha circular **"Start profiling and reload page"** (Iniciar perfilado y recargar página). El Inspector recargará la página y grabará la actividad durante la carga inicial hasta que determines detenerlo o se complete automáticamente. Esta es la mejor opción para analizar el rendimiento de carga percibido.
 
-<div class="text--center">
-  <img src="/img/inspector-performance-record.png" alt="Opciones de grabación en el panel Rendimiento" />
-</div>
+![Opciones de grabación en el panel Rendimiento](/img/inspector-performance-record.png)
 
 Una vez que detienes la grabación, el Inspector procesará los datos y mostrará un reporte detallado.
 
@@ -30,9 +28,7 @@ El reporte de rendimiento es una línea de tiempo visual compleja:
     * **Main:** Es el carril más importante. Muestra la actividad del hilo principal del navegador, que es responsable de ejecutar JavaScript, calcular estilos, hacer layout, pintar y componer. Aquí verás bloques de diferentes colores que representan diferentes tareas (Scripting - amarillo, Rendering - morado, Painting - verde, Loading - azul, Other - gris).
     * Otros carriles pueden incluir Raster, Composite Layers, GPU, etc.
 
-<div class="text--center">
-  <img src="/img/inspector-performance-timeline.png" alt="Timeline detallada en el panel Rendimiento" />
-</div>
+![Timeline detallada en el panel Rendimiento](/img/inspector-performance-timeline.png)
 
 3.  **Zoom y Selección:** Puedes hacer zoom en partes específicas de la línea de tiempo arrastrando un área en el overview, o usando la rueda del ratón mientras mantienes presionada `Shift`. Esto te permite enfocarte en un pico de actividad.
 4.  **Paneles de Análisis Inferiores:** La sección inferior cambia dependiendo de lo que selecciones en la línea de tiempo y el tipo de vista que elijas:
@@ -42,9 +38,7 @@ El reporte de rendimiento es una línea de tiempo visual compleja:
     * **Event Log:** Lista todos los eventos registrados en orden cronológico.
     * **Flame Chart (en el carril Main):** Una visualización jerárquica de las llamadas a funciones JavaScript a lo largo del tiempo. Las barras más anchas indican funciones que tardaron más en ejecutarse. La pila de llamadas se muestra verticalmente. ¡Es una vista muy poderosa para identificar cuellos de botella en JavaScript!
 
-<div class="text--center">
-  <img src="/img/inspector-performance-flame-chart.png" alt="Flame Chart en el panel Rendimiento" />
-</div>
+![Flame Chart en el panel Rendimiento](/img/inspector-performance-flame-chart.png)
 
 ### Identificando Cuellos de Botella
 

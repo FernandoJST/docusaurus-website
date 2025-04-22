@@ -25,9 +25,7 @@ Extensión para proyectos en React. Añade un panel `Components` que muestra el 
 - Contexto
 - Medición de rendimiento con `Profiler`
 
-<div class="text--center">
-  <img alt="Panel Components de React Developer Tools" src="/img/extension-react-detallado.png" />
-</div>
+![Panel Components de React Developer Tools](/img/extension-react-detallado.png)
 
 ---
 
@@ -49,9 +47,7 @@ Ideal para proyectos con Redux:
 - Estado de la store después de cada acción
 - Depuración con "viaje en el tiempo"
 
-<div class="text--center">
-  <img alt="Panel Components de Redux DevTools" src="/img/extension-redux-detallado.png" />
-</div>
+![Panel Components de Redux DevTools](/img/extension-redux-detallado.png)
 
 ---
 
@@ -107,7 +103,7 @@ Herramienta rápida para ver estilos CSS pasando el cursor sobre elementos:
 4. Abre el Inspector (`F12` o clic derecho → "Inspeccionar").
 5. La nueva herramienta aparecerá como un nuevo panel automáticamente si detecta que la página usa la tecnología compatible.
 
-> **Nota:** Algunas extensiones solo se activan si detectan una tecnología específica (React, Vue, etc.). Asegúrate de que la extensión esté habilitada en la configuración del navegador.
+> **Nota:** Algunas extensiones solo se activan si detectan una tecnología específica (React, Vue, etc.).
 
 ---
 
@@ -123,9 +119,3 @@ La extensión **AdBlock** bloquea anuncios intrusivos en sitios web, mejorando l
 4. Confirma la instalación.
 
 Una vez instalada, AdBlock bloqueará anuncios automáticamente, y puedes configurar filtros adicionales desde su menú.
-
----
-
-## Conclusión
-
-Agregar las extensiones DevTools adecuadas puede transformar tu flujo de trabajo. Explora y prueba las más útiles para los frameworks y tareas que realizas con frecuencia.

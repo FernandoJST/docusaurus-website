@@ -20,10 +20,7 @@ Lighthouse evalúa tu página en las siguientes categorías principales:
 4.  Marca la casilla "Clear storage" (Borrar almacenamiento) si quieres simular la primera visita de un usuario.
 5.  Haz clic en el botón **"Generate report"** (Generar reporte).
 
-<div class="text--center">
-  <img src="/img/inspector-lighthouse-generate.png" alt="Configurando y generando un reporte Lighthouse" />
-</div>
-
+![Configurando y generando un reporte Lighthouse](/img/inspector-lighthouse-generate.png)
 
 Lighthouse tardará un tiempo en ejecutar todas las auditorías y procesar los resultados.
 
@@ -36,9 +33,7 @@ El reporte es la parte más valiosa. Para cada categoría seleccionada, obtendr�
 * **Diagnostics (Diagnósticos):** Información adicional sobre el rendimiento o el cumplimiento de la categoría que **no tienen un impacto directo en la puntuación principal** pero son útiles para entender los problemas (ej. "Evitar cargas de red masivas", "Mantener bajos los recuentos de solicitudes").
 * **Audits Passed (Auditorías Pasadas):** Una lista de las pruebas que la página superó satisfactoriamente.
 
-<div class="text--center">
-  <img src="/img/inspector-lighthouse-report-summary.png" alt="Vista general de un reporte Lighthouse" />
-</div>
+![Vista general de un reporte Lighthouse](/img/inspector-lighthouse-report-summary.png)
 
 Para cada sugerencia en "Opportunities" o "Diagnostics", puedes hacer clic para expandir y obtener más detalles sobre el problema, qué recursos están involucrados y, a menudo, un enlace a la documentación de Google sobre cómo solucionarlo.
 

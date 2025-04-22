@@ -6,9 +6,7 @@ El panel **Red** (Network) te proporciona una visión completa de **todas las so
 
 Para ver la actividad de red, debes tener el panel abierto **antes** de que ocurra la solicitud. La forma más común es abrir el panel y luego **recargar la página (`F5` o `Cmd+R`)**. Verás una lista que se llena con cada recurso que el navegador solicita.
 
-<div class="text--center">
-  <img src="/img/inspector-red-capturing.png" alt="Capturando actividad de red al recargar la página" />
-</div>
+![Capturando actividad de red al recargar la página](/img/inspector-red-capturing.png)
 
 ### La Tabla de Solicitudes
 
@@ -34,9 +32,7 @@ Al hacer clic en una fila de la tabla, se abre un panel lateral o inferior con m
 * **Timing:** Proporciona un desglose detallado de las diferentes fases de la solicitud (DNS Lookup, Initial connection, SSL, Request sent, Waiting (TTFB - Time To First Byte), Content Download). Esencial para entender dónde se gasta el tiempo.
 * **Cookies:** Muestra las cookies enviadas en la solicitud y las cookies recibidas en la respuesta.
 
-<div class="text--center">
-  <img src="/img/inspector-red-details.png" alt="Panel de detalles de una solicitud de red" />
-</div>
+![Panel de detalles de una solicitud de red](/img/inspector-red-details.png)
 
 ### La Cascada de Tiempo (Waterfall)
 
@@ -55,9 +51,7 @@ La barra de herramientas superior del panel Red tiene opciones muy útiles:
 * **Disable cache:** Si está marcado, el navegador ignorará la caché y siempre descargará los recursos del servidor. ¡Crucial para probar cambios recientes!
 * **Throttling:** Un menú desplegable que simula velocidades de red más lentas (ej. "Fast 3G", "Slow 3G") o incluso offline. Indispensable para probar el rendimiento en condiciones reales de usuario.
 
-<div class="text--center">
-  <img src="/img/inspector-red-throttling.png" alt="Opciones de throttling en el panel Red" />
-</div>
+![Opciones de throttling en el panel Red](/img/inspector-red-throttling.png)
 
 * **Online/Offline:** Simula el estado online/offline del navegador.
 

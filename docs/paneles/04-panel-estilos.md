@@ -10,9 +10,7 @@ La sección principal del panel Estilos lista las reglas CSS aplicadas en el ord
 * Las reglas que aparecen **más abajo** tienen **mayor especificidad** o se definen más tarde en el código, y por lo tanto, sobrescriben a las anteriores.
 * Las propiedades **tachadas** (`color: blue;`) han sido **sobrescritas** por una regla posterior o más específica.
 
-<div class="text--center">
-  <img src="/img/inspector-estilos-cascada.png" alt="Panel Estilos mostrando reglas sobrescritas (tachadas)" />
-</div>
+![Panel Estilos mostrando reglas sobrescritas (tachadas)](/img/inspector-estilos-cascada.png)
 
 Esta visualización te ayuda a entender *por qué* un estilo particular se está aplicando (o no) a un elemento.
 
@@ -23,30 +21,22 @@ Esta visualización te ayuda a entender *por qué* un estilo particular se está
     * Para valores numéricos, puedes usar las **flechas arriba/abajo** del teclado para incrementar/decrementar el valor. Mantén `Shift` para incrementos de 10, o `Ctrl`/`Cmd` para incrementos de 100.
     * Para colores, haz clic en el **cuadrado de color** junto al valor para abrir un selector de color con opciones de formato (HEX, RGB, HSL) y una paleta de colores.
     
-<div class="text--center">
-  <img src="/img/inspector-estilos-color-picker.png" alt="Selector de color en el panel Estilos" />
-</div>
+![Selector de color en el panel Estilos](/img/inspector-estilos-color-picker.png)
 
     * Para propiedades como `box-shadow` o `text-shadow`, a menudo hay un ícono que abre un editor visual.
     
-<div class="text--center">
-  <img src="/img/inspector-estilos-box-shadow-editor.png" alt="Editor visual de box-shadow" />
-</div>
+![Editor visual de box-shadow](/img/inspector-estilos-box-shadow-editor.png)
 
 * **Añadir Nuevas Propiedades:** Haz clic al final de una regla existente o en un área vacía dentro de un bloque de reglas para añadir una nueva declaración `propiedad: valor;`. El Inspector ofrece autocompletado para nombres y valores de propiedades CSS.
 * **Añadir Nuevas Reglas:** Haz clic en el botón **"+"** (a veces junto a "Element Style") para añadir una nueva regla CSS con un selector por defecto (generalmente el del elemento seleccionado). Puedes editar el selector.
 * **`.cls` (Clases):** Haz clic en el botón `.cls` para ver y alternar las clases CSS aplicadas al elemento seleccionado. Puedes desmarcar una clase para ver cómo se ve el elemento sin ella, o escribir un nombre para **añadir una clase existente** y probar su efecto.
 * **`:hov` (Estados):** Haz clic en el botón `:hov` para forzar estados como `:hover`, `:active`, `:focus`, `:visited`, o pseudoelementos como `::before` y `::after`. Esto te permite inspeccionar y depurar estilos que solo se aplican bajo ciertas condiciones.
     
-<div class="text--center">
-  <img src="/img/inspector-estilos-force-state.png" alt="Simular estados CSS con :hov" />
-</div>
+![Simular estados CSS con :hov](/img/inspector-estilos-force-state.png)
 
 * **Box Model:** En la parte inferior del panel (o en la pestaña Layout), hay una representación interactiva del Box Model. Pasa el cursor sobre las secciones `margin`, `border`, `padding`, `content` para resaltarlas en la página. Haz doble clic en los valores para editarlos.
 
-<div class="text--center">
-  <img src="/img/inspector-estilos-box-model.png" alt="Box Model interactivo en el Inspector" />
-</div>
+![Box Model interactivo en el Inspector](/img/inspector-estilos-box-model.png)
 
 ### Paneles Relacionados: Computed y Layout
 

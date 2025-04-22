@@ -21,9 +21,7 @@ Esta es una de las secciones más utilizadas. Te permite inspeccionar y manipula
     * Puedes **añadir nuevas entradas**, **editar valores** (haz doble clic) o **eliminar entradas** (selecciona y presiona `Delete` o usa el menú contextual).
     * Útil para depurar preferencias de usuario, estados de sesión, tokens de autenticación, etc.
 
-<div class="text--center">
-  <img src="/img/inspector-aplicacion-local-storage.png" alt="Inspeccionando Local Storage" />
-</div>
+![Inspeccionando Local Storage](/img/inspector-aplicacion-local-storage.png)
 
 * **Cookies:**
     * Pequeños archivos de datos que los sitios web almacenan en tu navegador, enviados con cada solicitud al mismo dominio. Usados para seguimiento de sesión, personalización, seguimiento de usuario.
@@ -43,9 +41,7 @@ Esta es una de las secciones más utilizadas. Te permite inspeccionar y manipula
 
 * **Manifest:** Si la página web tiene un archivo `manifest.json` (para definir la PWA), esta sección mostrará sus detalles (nombre, íconos, URLs de inicio, orientación, etc.).
 
-<div class="text--center">
-  <img src="/img/inspector-aplicacion-manifest.png" alt="Visualizando el Manifiesto de la Aplicación" />
-</div>
+![Visualizando el Manifiesto de la Aplicación](/img/inspector-aplicacion-manifest.png)
 
 * **Service Workers:**
     * Los Service Workers son proxies programables entre el navegador y la red. Permiten intercepción de solicitudes, gestión de caché, notificaciones push, etc.
@@ -54,9 +50,7 @@ Esta es una de las secciones más utilizadas. Te permite inspeccionar y manipula
     * Muestra el estado del Service Worker (instalado, activado, etc.) y cualquier error en su ciclo de vida.
     * Crucial para depurar funcionalidad offline y notificaciones push.
 
-<div class="text--center">
-  <img src="/img/inspector-aplicacion-service-workers.png" alt="Gestionando Service Workers" />
-</div>
+![Gestionando Service Workers](/img/inspector-aplicacion-service-workers.png)
 
 ### Sección Background Services
 
