@@ -1,6 +1,4 @@
-# Manual de Uso del Inspector de Elementos
-
-## 11 - Panel Seguridad: Evaluando la Conexión Segura
+# Panel Seguridad: Evaluando la Conexión Segura
 
 El panel **Seguridad** (Security) proporciona información sobre la **seguridad de la conexión** de la página que estás visitando. Su enfoque principal es la seguridad de las conexiones **HTTPS**.
 
