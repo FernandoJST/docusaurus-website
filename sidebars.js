@@ -45,7 +45,6 @@ const sidebars = {
       collapsed: false,
       items: [
         'extras/extensiones',
-        'extras/ejemplos-practicos',
         'extras/atajos-utiles',
         'extras/conclusiones',
       ],
