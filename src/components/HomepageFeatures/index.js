@@ -4,32 +4,36 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    // Adaptado para documentación sobre Inspector de Elementos
+    title: 'Uso Básico e Interfaz',
+    Svg: require('@site/static/img/primera.svg').default, // Puedes cambiar esta imagen por una más relevante si tienes
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Comprende la interfaz principal del Inspector de Elementos y aprende
+        los pasos básicos para seleccionar e inspeccionar elementos HTML en la página.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    // Adaptado para documentación sobre Inspector de Elementos
+    title: 'Estilos CSS y Layout',
+    Svg: require('@site/static/img/segunda.svg').default, // Puedes cambiar esta imagen
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Explora a fondo la pestaña de Estilos. Aprende cómo ver, entender,
+        y modificar las reglas CSS y la disposición (layout) de los elementos
+        directamente desde el navegador.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    // Adaptado para documentación sobre Inspector de Elementos
+    title: 'Consola y Depuración JavaScript',
+    Svg: require('@site/static/img/tercera.svg').default, // Puedes cambiar esta imagen
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Descubre cómo usar la Consola del Inspector para ejecutar código JavaScript,
+        entender errores, y depurar scripts de manera efectiva en tus proyectos web.
       </>
     ),
   },
@@ -39,6 +43,7 @@ function Feature({Svg, title, description}) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
+        {/* La clase styles.featureSvg controla el tamaño del icono desde el CSS */}
         <Svg className={styles.featureSvg} role="img" />
       </div>
       <div className="text--center padding-horiz--md">
