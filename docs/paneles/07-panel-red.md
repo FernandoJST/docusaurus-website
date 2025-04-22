@@ -1,6 +1,4 @@
-# Manual de Uso del Inspector de Elementos
-
-## 07 - Panel Red: Monitoreando el Tráfico de la Web
+# Panel Red: Monitoreando el Tráfico de la Web
 
 El panel **Red** (Network) te proporciona una visión completa de **todas las solicitudes y respuestas de red** que el navegador realiza mientras carga y interactúa con una página. Es esencial para analizar el rendimiento de carga, depurar APIs y verificar que los recursos se cargan correctamente.
 

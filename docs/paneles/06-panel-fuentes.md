@@ -1,6 +1,4 @@
-# Manual de Uso del Inspector de Elementos
-
-## 06 - Panel Fuentes: Depuración de Código y Exploración de Archivos
+# Panel Fuentes: Depuración de Código y Exploración de Archivos
 
 El panel **Fuentes** (Sources) es tu cuartel general para **ver el código fuente** que compone la página y, lo más importante, para **depurar código JavaScript** pausando su ejecución.
 

@@ -1,6 +1,4 @@
-# Manual de Uso del Inspector de Elementos
-
-## 08 - Panel Rendimiento: Optimizando la Velocidad de Ejecución
+# Panel Rendimiento: Optimizando la Velocidad de Ejecución
 
 El panel **Rendimiento** (Performance) es una herramienta avanzada para analizar **cuánto tiempo tarda tu página en hacer cosas** después de que los recursos han sido cargados (aunque también captura la carga inicial). Te ayuda a identificar y corregir problemas de rendimiento en el tiempo de ejecución, como JavaScript lento, recálculos de estilo costosos o repintados excesivos.
 

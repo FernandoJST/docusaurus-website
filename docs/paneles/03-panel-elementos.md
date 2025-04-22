@@ -1,6 +1,4 @@
-# Manual de Uso del Inspector de Elementos
-
-## 03 - Panel Elementos: Explorando el DOM
+# Panel Elementos: Explorando el DOM
 
 El panel **Elementos** es el pilar central del Inspector. Es tu vista interactiva del **Document Object Model (DOM)**, la estructura jerárquica de objetos que representa el contenido de la página web.
 

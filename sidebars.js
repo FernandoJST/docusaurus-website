@@ -46,7 +46,6 @@ const sidebars = {
       items: [
         'extras/extensiones',
         'extras/atajos-utiles',
-        'extras/conclusiones',
       ],
     },
   ],

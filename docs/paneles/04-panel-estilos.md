@@ -1,6 +1,4 @@
-# Manual de Uso del Inspector de Elementos
-
-## 04 - Panel Estilos: El Laboratorio CSS
+# Panel Estilos: El Laboratorio CSS
 
 El panel **Estilos** (Styles) es donde pasas la mayor parte de tu tiempo cuando depuras o ajustas la apariencia visual de una página. Muestra todas las reglas CSS que afectan al elemento seleccionado y te permite modificarlas en tiempo real.
 

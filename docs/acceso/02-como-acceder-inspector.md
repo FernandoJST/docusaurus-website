@@ -1,6 +1,4 @@
-# Manual de Uso del Inspector de Elementos
-
-## 02 - Métodos de Acceso al Inspector
+# Métodos de Acceso al Inspector
 
 Acceder a las Herramientas para Desarrolladores es el primer paso para empezar a trabajar con ellas. Aquí detallamos los métodos más comunes y eficientes.
 

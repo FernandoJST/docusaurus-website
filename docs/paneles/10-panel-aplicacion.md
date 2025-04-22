@@ -1,6 +1,4 @@
-# Manual de Uso del Inspector de Elementos
-
-## 10 - Panel Aplicación: Explorando Recursos y Almacenamiento
+# Panel Aplicación: Explorando Recursos y Almacenamiento
 
 El panel **Aplicación** (Application) te ofrece una vista centralizada de diversos recursos y mecanismos de almacenamiento del lado del cliente que utiliza una página web. Es particularmente útil para depurar características relacionadas con el rendimiento, la confiabilidad (ej. offline) y la interacción con el navegador.
 

@@ -1,6 +1,4 @@
-# Manual de Uso del Inspector de Elementos
-
-## 12 - Panel Lighthouse: Auditorías de Calidad Web
+# Panel Lighthouse: Auditorías de Calidad Web
 
 El panel **Lighthouse** integra la popular herramienta de auditoría de código abierto de Google. Te permite ejecutar una serie de pruebas automatizadas para evaluar la **calidad de tu página web** en múltiples aspectos y obtener sugerencias accionables para mejorarla.
 

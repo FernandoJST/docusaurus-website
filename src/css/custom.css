@@ -4,27 +4,541 @@
  * work well for content-centric websites.
  */
 
-/* You can override the default Infima variables here. */
+/* Importar la fuente Lato */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/* --- VARIABLES DE COLOR Y TIPOGRAFÍA PERSONALIZADAS --- */
+
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  /* Paleta Oscura/Moderna */
+  --ifm-color-primary: #00bcd4; /* Teal - color de acento */
+  --ifm-color-primary-dark: #00acc1;
+  --ifm-color-primary-darker: #009cb3;
+  --ifm-color-primary-darkest: #008b9b;
+  --ifm-color-primary-light: #26cddb;
+  --ifm-color-primary-lighter: #4dd8e4;
+  --ifm-color-primary-lightest: #73e4ed;
+
+  /* Colores de fondo y texto */
+  --ifm-background-color: #f4f7f6; /* Fondo muy claro gris-azulado */
+  --ifm-background-color-dark: #e9ecf0; /* Fondo ligeramente más oscuro */
+  --ifm-color-emphasis-100: #f4f7f6; /* Casi blanco */
+  --ifm-color-emphasis-200: #e9ecf0;
+  --ifm-color-emphasis-300: #dee3ea; /* Gris claro para bordes */
+  --ifm-color-emphasis-400: #c4cad4;
+  --ifm-color-emphasis-500: #aab3bd; /* Gris medio */
+  --ifm-color-emphasis-600: #8f9aa4;
+  --ifm-color-emphasis-700: #5f6b7a; /* Texto gris oscuro */
+  --ifm-color-emphasis-800: #313d4c; /* Texto casi negro (para títulos, cuerpo) */
+  --ifm-color-emphasis-900: #1a202c; /* Azul muy oscuro (para navbar, footer fondo) */
+
+  /* Tipografía */
+  --ifm-font-family-base: 'Lato', sans-serif; /* Fuente base */
+  --ifm-heading-color: var(--ifm-color-emphasis-900); /* Color de los encabezados */
+  --ifm-font-color-base: var(--ifm-color-emphasis-800); /* Color general del texto */
+  --ifm-link-color: var(--ifm-color-primary-dark); /* Color de los enlaces */
+  --ifm-link-hover-color: var(--ifm-color-primary-darkest);
+
+  /* Espaciado y bordes */
+  --ifm-spacing-vertical: 1.3rem; /* **Más espaciado vertical** */
+  --ifm-spacing-horizontal: 1.3rem; /* **Más espaciado horizontal** */
+  --ifm-border-color: var(--ifm-color-emphasis-300);
+  --ifm-border-radius: 0.375rem;
+
+  /* Código y resaltado */
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.08);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* --- MODO OSCURO --- */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  /* Paleta Oscura */
+  --ifm-color-primary: #4dd8e4;
+  --ifm-color-primary-dark: #26cddb;
+  --ifm-color-primary-darker: #00bcd4;
+  --ifm-color-primary-darkest: #00acc1;
+  --ifm-color-primary-light: #73e4ed;
+  --ifm-color-primary-lighter: #99eff6;
+  --ifm-color-primary-lightest: #ccf8fb;
+
+  /* Colores de fondo y texto */
+  --ifm-background-color: #1a202c;
+  --ifm-background-color-dark: #313d4c;
+  --ifm-color-emphasis-900: #f4f7f6;
+  --ifm-color-emphasis-800: #e9ecf0;
+  --ifm-color-emphasis-700: #dee3ea;
+  --ifm-color-emphasis-600: #c4cad4;
+  --ifm-color-emphasis-500: #aab3bd;
+  --ifm-color-emphasis-400: #8f9aa4;
+  --ifm-color-emphasis-300: #5f6b7a;
+  --ifm-color-emphasis-200: #313d4c;
+  --ifm-color-emphasis-100: #1a202c;
+
+   /* Tipografía modo oscuro */
+  --ifm-heading-color: var(--ifm-color-emphasis-900);
+  --ifm-font-color-base: var(--ifm-color-emphasis-800);
+  --ifm-link-color: var(--ifm-color-primary-light);
+  --ifm-link-hover-color: var(--ifm-color-primary-lighter);
+
+  --ifm-border-color: var(--ifm-color-emphasis-700);
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.08);
 }
+
+
+/* --- AJUSTES GLOBALES DEL CUERPO Y TIPOGRAFÍA --- */
+
+body {
+    color: var(--ifm-font-color-base);
+    background-color: var(--ifm-background-color);
+    font-family: var(--ifm-font-family-base);
+    font-size: 1.1rem; /* **Tamaño base un poco más grande** */
+    line-height: 1.7;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--ifm-heading-color);
+    margin-top: calc(var(--ifm-spacing-vertical) * 2);
+    margin-bottom: var(--ifm-spacing-vertical);
+    font-weight: 700;
+    font-family: var(--ifm-font-family-base);
+}
+
+h1 { font-size: 2.5rem; } /* Ajustado de nuevo */
+h2 { font-size: 2rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.25rem; }
+h5 { font-size: 1.1rem; }
+h6 { font-size: 1rem; }
+
+
+a {
+    color: var(--ifm-link-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--ifm-link-hover-color);
+    text-decoration: underline;
+}
+
+/* Estilos para el contenido markdown */
+.markdown {
+    /* Puedes añadir estilos específicos aquí */
+}
+
+/* Ajustes para el modo oscuro del cuerpo y tipografía */
+[data-theme='dark'] body {
+    color: var(--ifm-font-color-base);
+    background-color: var(--ifm-background-color);
+}
+
+[data-theme='dark'] h1, [data-theme='dark'] h2, [data-theme='dark'] h3, [data-theme='dark'] h4, [data-theme='dark'] h5, [data-theme='dark'] h6 {
+    color: var(--ifm-heading-color);
+}
+
+[data-theme='dark'] a {
+    color: var(--ifm-link-color);
+}
+
+[data-theme='dark'] a:hover {
+    color: var(--ifm-link-hover-color);
+}
+
+
+/* --- PERSONALIZACIÓN DE LA BARRA DE NAVEGACIÓN (NAVBAR) --- */
+
+.navbar {
+  background-color: var(--ifm-color-emphasis-900);
+  color: var(--ifm-color-emphasis-200);
+  height: 5rem;
+  padding: 0 var(--ifm-spacing-horizontal);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+}
+
+.navbar__inner {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__items {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__items--left {
+    display: flex;
+    align-items: center;
+    /* El espacio entre logo/título y los items de la derecha se maneja con space-between */
+}
+
+.navbar__items--right {
+    display: flex;
+    align-items: center;
+    margin-left: var(--ifm-spacing-horizontal); /* Espacio a la izquierda de los items derechos */
+}
+
+.navbar__title {
+  color: var(--ifm-color-emphasis-100);
+  font-size: 1.9rem; /* **Tamaño del título un poco más grande** */
+  font-weight: bold;
+  margin-left: 0.7rem;
+}
+
+.navbar__logo {
+    height: 3.8rem; /* **Aumenta la altura del logo** */
+    /* Si quieres cambiar el color del SVG en modo oscuro */
+    /* [data-theme='dark'] & { filter: invert(1); } */
+}
+
+
+.navbar__link {
+  color: var(--ifm-color-emphasis-400);
+  font-size: 1.15rem; /* **Tamaño de letra de los enlaces más grande** */
+  padding: 0.8rem 1.2rem; /* **Más espacio alrededor** */
+  transition: color 0.3s ease, background-color 0.3s ease;
+  border-radius: var(--ifm-border-radius);
+}
+
+.navbar__link:hover {
+  color: var(--ifm-color-primary-light);
+  background-color: rgba(255, 255, 255, 0.08);
+  text-decoration: none;
+}
+
+.navbar__link--active {
+  color: var(--ifm-color-primary);
+  font-weight: bold;
+  background-color: rgba(var(--ifm-color-primary-rgb), 0.2);
+}
+
+/* Estilos para el botón de búsqueda (si lo habilitas) */
+.navbar__search {
+    margin-left: var(--ifm-spacing-horizontal);
+    display: flex;
+    align-items: center;
+}
+/* Puedes necesitar estilos más específicos para el input/botón dependiendo del plugin de búsqueda */
+
+
+/* Ajustes para el modo oscuro de la Navbar */
+[data-theme='dark'] .navbar {
+    background-color: var(--ifm-background-color-dark);
+    color: var(--ifm-color-emphasis-800);
+    box-shadow: 0 3px 6px rgba(255, 255, 255, 0.1);
+}
+
+[data-theme='dark'] .navbar__title {
+     color: var(--ifm-color-emphasis-900);
+}
+
+[data-theme='dark'] .navbar__link {
+  color: var(--ifm-color-emphasis-600);
+}
+
+[data-theme='dark'] .navbar__link:hover {
+  color: var(--ifm-color-primary-lighter);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+[data-theme='dark'] .navbar__link--active {
+  color: var(--ifm-color-primary);
+   background-color: rgba(var(--ifm-color-primary-rgb), 0.2);
+}
+
+[data-theme='dark'] .navbar__search input[type="search"] {
+    border-color: var(--ifm-border-color);
+    background-color: var(--ifm-background-color);
+    color: var(--ifm-font-color-base);
+}
+
+
+/* --- PERSONALIZACIÓN DE LA BARRA LATERAL (SIDEBAR) --- */
+
+.sidebar {
+    background-color: var(--ifm-background-color-dark);
+    padding: var(--ifm-spacing-vertical) var(--ifm-spacing-horizontal); /* **Más padding interno** */
+    width: 300px; /* **Barra lateral un poco más ancha** */
+    border-right: 1px solid var(--ifm-border-color);
+}
+
+/* Estilos generales para los menús dentro de la sidebar */
+.menu {
+    /* margin-top: var(--ifm-spacing-vertical); */
+}
+
+/* Estilos para los títulos de categoría */
+.menu__list-item-collapsible > .menu__link {
+    font-weight: bold;
+    color: var(--ifm-color-emphasis-900);
+    background-color: transparent !important;
+    margin-bottom: 0.6rem; /* **Más espacio abajo** */
+    padding: 0.7rem var(--ifm-spacing-horizontal); /* **Más padding** */
+    border-radius: var(--ifm-border-radius);
+    font-size: 1.1rem; /* **Tamaño de letra de categoría más grande** */
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+/* Hover para títulos de categoría */
+.menu__list-item-collapsible > .menu__link:hover {
+     color: var(--ifm-color-primary-dark);
+     background-color: var(--ifm-background-color);
+}
+
+
+/* Estilos para los enlaces individuales dentro de las categorías */
+.menu__list-item .menu__link {
+    color: var(--ifm-color-emphasis-700);
+    font-size: 1.05rem; /* **Tamaño de letra de las opciones más grande** */
+    padding: 0.6rem calc(var(--ifm-spacing-horizontal) + 0.7rem); /* **Más espaciado y indentación** */
+    border-radius: var(--ifm-border-radius);
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.menu__list-item .menu__link:hover {
+    color: var(--ifm-color-primary);
+    background-color: var(--ifm-background-color);
+}
+
+/* Estilos para el enlace activo (la página actual) */
+.menu__list-item .menu__link--active {
+    color: var(--ifm-color-primary-darkest);
+    background-color: var(--ifm-color-primary-lightest);
+    font-weight: bold;
+}
+
+/* Estilos para el icono de colapsar/expandir (la flecha) */
+.menu__caret {
+    filter: invert(10%);
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Cuando la categoría está expandida, rota la flecha */
+.menu__list-item-collapsible[aria-expanded="true"] > .menu__link .menu__caret {
+    transform: rotate(90deg);
+}
+
+/* Quitar el estilo predeterminado de las listas (puntos/números) */
+.menu__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Espaciado entre elementos de la lista */
+.menu__list-item {
+    margin-bottom: 0.3rem; /* **Espacio ligeramente mayor entre items** */
+}
+
+
+/* Ajustes para el modo oscuro de la Sidebar */
+[data-theme='dark'] .sidebar {
+    background-color: var(--ifm-background-color);
+    border-right-color: var(--ifm-border-color);
+}
+
+[data-theme='dark'] .menu__list-item-collapsible > .menu__link {
+    color: var(--ifm-color-emphasis-900);
+}
+
+[data-theme='dark'] .menu__list-item-collapsible > .menu__link:hover {
+    color: var(--ifm-color-primary-lighter);
+    background-color: var(--ifm-background-color-dark);
+}
+
+[data-theme='dark'] .menu__list-item .menu__link {
+    color: var(--ifm-color-emphasis-700);
+}
+
+[data-theme='dark'] .menu__list-item .menu__link:hover {
+    color: var(--ifm-color-primary-lighter);
+    background-color: var(--ifm-background-color-dark);
+}
+
+[data-theme='dark'] .menu__list-item .menu__link--active {
+    color: var(--ifm-color-primary-lightest);
+    background-color: var(--ifm-color-primary-darkest);
+}
+
+[data-theme='dark'] .menu__caret {
+    filter: invert(80%);
+}
+
+
+/* --- PERSONALIZACIÓN DEL PIE DE PÁGINA (FOOTER) --- */
+
+.footer {
+  background-color: var(--ifm-color-emphasis-900);
+  color: var(--ifm-color-emphasis-400);
+  padding: calc(var(--ifm-spacing-vertical) * 2) var(--ifm-spacing-horizontal);
+}
+
+.footer a {
+    color: var(--ifm-color-emphasis-500);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: var(--ifm-color-primary-light);
+    text-decoration: underline;
+}
+
+.footer__copyright {
+    color: var(--ifm-color-emphasis-600);
+    font-size: 0.9rem;
+    margin-top: var(--ifm-spacing-vertical);
+}
+
+/* Ajustes para el modo oscuro del Footer */
+[data-theme='dark'] .footer {
+    background-color: var(--ifm-background-color-dark);
+    color: var(--ifm-color-emphasis-600);
+}
+
+[data-theme='dark'] .footer a {
+    color: var(--ifm-color-emphasis-700);
+}
+
+[data-theme='dark'] .footer a:hover {
+    color: var(--ifm-color-primary-lighter);
+}
+
+[data-theme='dark'] .footer__copyright {
+    color: var(--ifm-color-emphasis-800);
+}
+
+
+/* --- ESTILOS ADICIONALES (EJEMPLOS) --- */
+
+/* Estilo para bloques de código */
+.theme-code-block {
+  border-left: 4px solid var(--ifm-color-primary-dark);
+  border-radius: var(--ifm-border-radius);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: var(--ifm-spacing-vertical) 0;
+  background-color: var(--ifm-background-color-dark);
+  padding: var(--ifm-spacing-vertical) var(--ifm-spacing-horizontal);
+}
+
+.prism-code {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--ifm-color-emphasis-800);
+}
+
+[data-theme='dark'] .theme-code-block {
+    border-left-color: var(--ifm-color-primary-light);
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.08);
+    background-color: var(--ifm-background-color);
+}
+
+[data-theme='dark'] .prism-code {
+     color: var(--ifm-color-emphasis-800);
+}
+
+
+/* Estilo para las "admonitions" (cajas de Info, Warning, etc.) */
+.alert {
+    border-left-width: 4px;
+    border-left-style: solid;
+    border-radius: var(--ifm-border-radius);
+    padding: 1.2rem;
+    margin: var(--ifm-spacing-vertical) 0;
+    opacity: 0.98;
+    font-size: 1rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.alert--info {
+    border-left-color: var(--ifm-color-primary);
+    background-color: var(--ifm-color-primary-lightest);
+    color: var(--ifm-color-emphasis-900);
+}
+
+.alert--warning {
+    border-left-color: #ffb300;
+    background-color: #fff9e6;
+    color: #7f5a00;
+}
+
+.alert--danger {
+    border-left-color: #e53935;
+    background-color: #ffebed;
+    color: #7f1d1c;
+}
+
+.alert--success {
+    border-left-color: #43a047;
+    background-color: #e8f5e9;
+    color: #2e6a31;
+}
+
+/* Ajustes para admonitions en modo oscuro */
+[data-theme='dark'] .alert--info {
+    border-left-color: var(--ifm-color-primary-light);
+    background-color: rgba(var(--ifm-color-primary-rgb), 0.25);
+    color: var(--ifm-color-emphasis-800);
+}
+
+[data-theme='dark'] .alert--warning {
+    border-left-color: #ffcd70;
+    background-color: rgba(255, 179, 0, 0.25);
+    color: var(--ifm-color-emphasis-800);
+}
+
+[data-theme='dark'] .alert--danger {
+    border-left-color: #ef7a7a;
+    background-color: rgba(229, 57, 53, 0.25);
+    color: var(--ifm-color-emphasis-800);
+}
+
+[data-theme='dark'] .alert--success {
+    border-left-color: #81c784;
+    background-color: rgba(67, 160, 71, 0.25);
+    color: var(--ifm-color-emphasis-800);
+}
+
+
+/* --- OTROS DETALLES CREATIVOS --- */
+
+/* Estilo para la barra de scroll (puede no funcionar en todos los navegadores) */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--ifm-background-color-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--ifm-color-emphasis-500);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--ifm-color-emphasis-600);
+}
+
+/* Ajustes para scrollbar en modo oscuro */
+[data-theme='dark'] ::-webkit-scrollbar-track {
+  background: var(--ifm-background-color);
+}
+
+[data-theme='dark'] ::-webkit-scrollbar-thumb {
+  background: var(--ifm-color-emphasis-400);
+}
+
+[data-theme='dark'] ::-webkit-scrollbar-thumb:hover {
+  background: var(--ifm-color-emphasis-500);
+}
+
+
+/* Puedes añadir más estilos para tablas, imágenes, botones, etc. */
+/* usando las herramientas de desarrollador para encontrar las clases */

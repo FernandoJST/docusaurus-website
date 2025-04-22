@@ -1,6 +1,4 @@
-# Manual de Uso del Inspector de Elementos
-
-## 09 - Panel Memoria: Diagnóstico de Uso de Memoria y Fugas
+# Panel Memoria: Diagnóstico de Uso de Memoria y Fugas
 
 El panel **Memoria** (Memory) es la herramienta principal para **analizar el uso de memoria** de tu aplicación web. Es crucial para identificar cuándo la página consume demasiada memoria (lo que puede ralentizarla o hacerla colapsar) y, sobre todo, para detectar **fugas de memoria**.
 

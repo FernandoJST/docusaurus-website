@@ -1,6 +1,4 @@
-# Manual de Uso del Inspector de Elementos
-
-## 05 - Panel Consola: El Entorno Interactivo de JavaScript
+# Panel Consola: El Entorno Interactivo de JavaScript
 
 El panel **Consola** (Console) es tu portal de comunicación bidireccional con el entorno JavaScript de la página. Sirve para dos propósitos principales: **ver mensajes** (errores, advertencias, logs) y **ejecutar código** interactivamente.
 
