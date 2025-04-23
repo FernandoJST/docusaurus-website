@@ -4,6 +4,9 @@ Este repositorio está dedicado a la creación de un **manual de uso del Inspect
 
 El manual está diseñado para guiar a los usuarios a través de las herramientas del Inspector de Elementos de los navegadores web, como Chrome, Firefox, Edge, etc., explicando cómo usar estas herramientas para inspeccionar, depurar y modificar elementos de una página web en tiempo real.
 
+🔗 **Puedes ver el sitio en vivo aquí:**  
+[https://fernandojst.github.io/docusaurus-website/](https://fernandojst.github.io/docusaurus-website/)
+
 ## Descripción
 
 El sitio contiene una serie de documentos que explican en detalle cómo utilizar el Inspector de Elementos en los navegadores más populares. Las secciones incluyen:
