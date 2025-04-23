@@ -1,41 +1,23 @@
-# Website
+# Manual de Uso del Inspector de Elementos - Proyecto Docusaurus
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+Este repositorio está dedicado a la creación de un **manual de uso del Inspector de Elementos** del navegador utilizando **Docusaurus**, una herramienta moderna para generar sitios web estáticos.
 
-### Installation
+El manual está diseñado para guiar a los usuarios a través de las herramientas del Inspector de Elementos de los navegadores web, como Chrome, Firefox, Edge, etc., explicando cómo usar estas herramientas para inspeccionar, depurar y modificar elementos de una página web en tiempo real.
 
-```
-$ yarn
-```
+## Descripción
 
-### Local Development
+El sitio contiene una serie de documentos que explican en detalle cómo utilizar el Inspector de Elementos en los navegadores más populares. Las secciones incluyen:
 
-```
-$ yarn start
-```
+- **Introducción al Inspector de Elementos**: Explicación general de la herramienta y su propósito.
+- **Acceso al Inspector de Elementos**: Cómo abrir y utilizar el Inspector en diferentes navegadores.
+- **Paneles del Inspector**: Descripción de los paneles más comunes como el de HTML, CSS, Consola, Red, etc.
+- **Extras**: Herramientas adicionales que complementan el Inspector.
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+Este proyecto es ideal para desarrolladores web, diseñadores y cualquier persona que quiera aprender a depurar y modificar páginas web de manera efectiva.
 
-### Build
+## Instalación
 
-```
-$ yarn build
-```
+Para instalar las dependencias del proyecto, usa el siguiente comando:
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+```bash
+$ npm install
